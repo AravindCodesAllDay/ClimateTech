@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Topnavbar() {
   const [theme, setTheme] = useState(
@@ -80,7 +81,7 @@ function Topnavbar() {
           <div className="text-center navbar-nav ml-auto mr-auto">
             <main className="flex items-center justify-center  ml-1 flex-col space-y-28  ">
               <div className="flex space-x-7 ml-8 font-body  ">
-                <a
+                <Link
                   className="font-body text-xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -103,11 +104,11 @@ function Topnavbar() {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-                  href="/"
+                  to={"/"}
                 >
                   Home
-                </a>
-                <a
+                </Link>
+                <Link
                   className="font-body text-xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -130,11 +131,11 @@ function Topnavbar() {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-                  href="/modeselect"
+                  to="/modeselect"
                 >
                   Mode
-                </a>
-                <a
+                </Link>
+                <Link
                   className="font-body text-xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -157,11 +158,11 @@ function Topnavbar() {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-                  href="/PlaceSelect"
+                  to="/PlaceSelect"
                 >
                   Place
-                </a>
-                <a
+                </Link>
+                <Link
                   className="font-body text-xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -184,10 +185,10 @@ function Topnavbar() {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-                  href="/contact"
+                  to="/contact"
                 >
                   Our Team
-                </a>
+                </Link>
               </div>
             </main>
           </div>

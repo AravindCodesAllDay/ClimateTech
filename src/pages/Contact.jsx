@@ -90,7 +90,7 @@ const Contact = () => {
             />
           </Link>
           <div className="flex space-x-14 ml-20 font-body  ">
-            <a
+            <Link
               className="font-body text-2xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -113,12 +113,12 @@ const Contact = () => {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-              href="/"
+              to="/"
             >
               Home
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="font-body text-2xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -141,11 +141,11 @@ const Contact = () => {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-              href="/modeselect"
+              to="/modeselect"
             >
               Mode
-            </a>
-            <a
+            </Link>
+            <Link
               className="font-body text-2xl dark:text-white text-green-800 my-2 capitalize
                         inline-block
                         relative
@@ -168,10 +168,10 @@ const Contact = () => {
                         before:to-green-500
                         hover:before:w-full
                         hover:before:opacity-100"
-              href="/PlaceSelect"
+              to="/PlaceSelect"
             >
               Place
-            </a>
+            </Link>
           </div>
         </div>
       </main>
