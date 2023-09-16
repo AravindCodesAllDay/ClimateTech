@@ -57,15 +57,18 @@ const Displaycontent = ({ close, infoType }) => {
           if (detail.component_type == infoType) {
             return (
               <div>
-                <div className="text-2xl font-body flex flex-row font-extrabold text-center">
-                  <div className="flex flex-row text-2xl">
+                <div className="text-2xl font-body font-extrabold text-center">
+                  <div className=" text-2xl flex flex-row ">
                     <ion-icon
                       onClick={closeBlurb}
                       name="close-circle-outline"
                     ></ion-icon>
                   </div>
-                  <div className="flex flex-row ml-12 pb-10">
-                    <h3>{detail.component_type}</h3>
+                  <div className=" pb-10 item-center">
+                    <h3>
+                      {detail.component_type[0].toUpperCase() +
+                        detail.component_type.slice(1)}
+                    </h3>
                   </div>
                 </div>
 

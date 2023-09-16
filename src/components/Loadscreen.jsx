@@ -34,12 +34,6 @@ const Loadscreen = () => {
           <div className="mb-2 text-2xl p-3 font-body text-center">
             <h3>How to Get Started</h3>
           </div>
-          {/* <button class="collapsible" className="h-10 px-4 py-2 m-1 transition min-w-full ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150 shadow-lg font-side shadow-green-800/50 text-white transform bg-green-600 rounded-full hover:bg-green-400 focus:outline-none focus:bg-green-400"
-                  onClick={() => showOneDetail(1)}
-                  aria-controls="example2"
-                  aria-expanded={open1}>  
-                    About 
-                    </button>  */}
 
           <Collapse in={open1}>
             <div id="example2">
