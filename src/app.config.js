@@ -1,6 +1,6 @@
 const config = {
   development: {
-    apiUrl1: "https://my-json-server.typicode.com/AravindCodesAllDay/FakeApi", // Development API URL
+    apiUrl1: "https://my-json-server.typicode.com/AravindCodesAllDay/zemliaApi", // Development API URL
     apiUrl2: "https://thin-baboons-guess.loca.lt", // Another API URL for development
   },
   production: {
